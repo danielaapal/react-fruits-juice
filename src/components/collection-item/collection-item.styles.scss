@@ -1,0 +1,30 @@
+.collection-item {
+    background-color: #ddd;
+    border-radius: 10px;
+    text-align: center;
+    width: 80px;
+    height: 120px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+        cursor: pointer;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 15px auto 0;
+    }
+
+    span {
+        font-size: 12px;
+        display: block;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+}
