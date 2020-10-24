@@ -1,12 +1,12 @@
 import React from 'react';
+import Header from '../../components/header/header.component';
 
 import PreviewCollection from '../../components/preview-collection/preview-collection.components';
 
 import './homepage.styles.scss';
 
-
 class Homepage extends React.Component {
-    constructor(props) {
+    constructor() {
         super();
 
         this.state = {
@@ -17,10 +17,9 @@ class Homepage extends React.Component {
     render() {
         return (
             <div className="homepage">
-                <h1>Fruits</h1>
+                <Header title="Fruits" showBackArrow={false}/>    
 
                <PreviewCollection />
-               
 
                <p className="freeicon">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
             </div>
